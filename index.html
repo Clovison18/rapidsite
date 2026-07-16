@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SV Wien Rapid — Offizielle Website</title>
+<meta name="description" content="Die offizielle Website von SV Wien Rapid. News, Spielplan, Tickets, Fanshop und mehr.">
+<link rel="icon" href="images/crest.svg">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<!-- ============================================ HEADER ============================================ -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="brand">
+      <img src="images/crest.svg" alt="SV Wien Rapid Wappen" class="brand__crest">
+      <span class="brand__name">SV Wien Rapid<strong>Seit 1899</strong></span>
+    </a>
+
+    <nav class="nav" aria-label="Hauptnavigation">
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="news.html" class="nav__link">News</a></li>
+        <li><a href="spielplan.html" class="nav__link">Spielplan</a></li>
+        <li class="nav__item--has-mega">
+          <a href="teams.html" class="nav__link" aria-expanded="false">Teams</a>
+          <div class="mega">
+            <div class="container mega__grid">
+              <div class="mega__col">
+                <h4>Mannschaften</h4>
+                <a href="teams.html#profis">Profis</a>
+                <a href="teams.html#frauen">Frauen</a>
+                <a href="teams.html#rapid2">Rapid II</a>
+                <a href="teams.html#nachwuchs">Nachwuchs</a>
+              </div>
+              <div class="mega__col">
+                <h4>Profis</h4>
+                <a href="spieler-detail.html">Kader</a>
+                <a href="teams.html#trainerteam">Trainerteam</a>
+                <a href="teams.html#statistiken">Statistiken</a>
+                <a href="spielplan.html">Saisonübersicht</a>
+              </div>
+              <div class="mega__col">
+                <h4>Nachwuchs</h4>
+                <a href="teams.html#akademie">Akademie</a>
+                <a href="teams.html#scouting">Scouting</a>
+                <a href="verein.html#jobs">Trainer werden</a>
+              </div>
+              <figure class="mega__feature">
+                <img src="images/training.svg" alt="Training der Profimannschaft">
+                <figcaption>Einblicke ins Training</figcaption>
+              </figure>
+            </div>
+          </div>
+        </li>
+        <li><a href="tickets.html" class="nav__link">Tickets</a></li>
+        <li><a href="fanshop.html" class="nav__link">Fanshop</a></li>
+        <li><a href="videos.html" class="nav__link">Videos</a></li>
+        <li class="nav__item--has-mega">
+          <a href="verein.html" class="nav__link" aria-expanded="false">Verein</a>
+          <div class="mega">
+            <div class="container mega__grid">
+              <div class="mega__col">
+                <h4>Der Verein</h4>
+                <a href="verein.html#geschichte">Geschichte</a>
+                <a href="verein.html#leitbild">Leitbild</a>
+                <a href="verein.html#praesidium">Präsidium</a>
+                <a href="verein.html#erfolge">Erfolge</a>
+              </div>
+              <div class="mega__col">
+                <h4>Engagement</h4>
+                <a href="verein.html#nachhaltigkeit">Nachhaltigkeit</a>
+                <a href="verein.html#jobs">Jobs</a>
+                <a href="verein.html#presse">Presse</a>
+                <a href="mitgliedschaft.html">Mitgliedschaft</a>
+              </div>
+              <div class="mega__col">
+                <h4>Business</h4>
+                <a href="business.html">Business Club</a>
+                <a href="business.html#hospitality">Hospitality</a>
+                <a href="business.html#partner">Partner werden</a>
+              </div>
+              <figure class="mega__feature">
+                <img src="images/stadium-exterior.svg" alt="Stadionansicht">
+                <figcaption>Unser Stadion</figcaption>
+              </figure>
+            </div>
+          </div>
+        </li>
+        <li><a href="stadion.html" class="nav__link">Stadion</a></li>
+        <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <button class="icon-btn search-trigger" aria-label="Suche öffnen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <a href="mitgliedschaft.html" class="btn btn--gold btn--sm" style="display:none" id="memberBtnDesktop">Mitglied werden</a>
+      <button class="burger" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Drawer -->
+<div class="drawer-backdrop"></div>
+<nav class="mobile-drawer" aria-label="Mobile Navigation">
+  <a href="index.html" class="mobile-drawer__link">Home</a>
+  <a href="news.html" class="mobile-drawer__link">News</a>
+  <a href="spielplan.html" class="mobile-drawer__link">Spielplan</a>
+  <a href="teams.html" class="mobile-drawer__link">Teams</a>
+  <a href="spieler-detail.html" class="mobile-drawer__link">Profis</a>
+  <a href="teams.html#frauen" class="mobile-drawer__link">Frauen</a>
+  <a href="teams.html#rapid2" class="mobile-drawer__link">Rapid II</a>
+  <a href="teams.html#nachwuchs" class="mobile-drawer__link">Nachwuchs</a>
+  <a href="tickets.html" class="mobile-drawer__link">Tickets</a>
+  <a href="fanshop.html" class="mobile-drawer__link">Fanshop</a>
+  <a href="videos.html" class="mobile-drawer__link">Videos</a>
+  <a href="mitgliedschaft.html" class="mobile-drawer__link">Mitgliedschaft</a>
+  <a href="business.html" class="mobile-drawer__link">Business</a>
+  <a href="verein.html" class="mobile-drawer__link">Verein</a>
+  <a href="stadion.html" class="mobile-drawer__link">Stadion</a>
+  <a href="kontakt.html" class="mobile-drawer__link">Kontakt</a>
+  <a href="tickets.html" class="btn btn--primary btn--block" style="margin-top:1.5rem">Tickets sichern</a>
+</nav>
+
+<!-- Search overlay -->
+<div class="search-overlay">
+  <button class="search-overlay__close" aria-label="Suche schließen">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <form class="search-overlay__form" data-demo-form data-success-message="Suche wird ausgeführt …">
+    <input type="search" placeholder="Spieler, News, Tickets suchen…" aria-label="Suchbegriff">
+  </form>
+</div>
+
+<!-- ============================================ HERO ============================================ -->
+<section class="hero">
+  <div class="hero__media">
+    <img src="images/Screenshot 2026-06-29 005510.png" alt="Stadion bei Nacht unter Flutlicht">
+  </div>
+  <div class="hero__overlay"></div>
+
+  <div class="hero__match-card" data-reveal="fade">
+    <div class="fixture-card__comp"><span>Bundesliga · 34. Runde</span><span class="fixture-card__live"><span class="dot"></span> Heimspiel</span></div>
+    <div class="vs">
+      <div style="text-align:center"><img src="images/crest.svg" class="crest-sm" alt="SV Wien Rapid"><div style="font-size:.75rem;margin-top:4px">Wien Rapid</div></div>
+      <span class="sep">VS</span>
+      <div style="text-align:center"><img src="images/crest-opponent1.svg" class="crest-sm" alt="Gegner"><div style="font-size:.75rem;margin-top:4px">Austria Linz</div></div>
+    </div>
+    <div class="countdown" data-countdown="2026-07-05T18:30:00">
+      <div><b data-d>0</b><span>Tage</span></div>
+      <div><b data-h>00</b><span>Std</span></div>
+      <div><b data-m>00</b><span>Min</span></div>
+      <div><b data-s>00</b><span>Sek</span></div>
+    </div>
+    <a href="tickets.html" class="btn btn--primary btn--block" style="margin-top:1rem">Tickets sichern</a>
+  </div>
+
+  <div class="container hero__content">
+    <span class="hero__eyebrow"><span class="dot"></span> Nächstes Spiel · Samstag 18:30</span>
+    
+    <p class="hero__sub" data-reveal="up">Willkommen bei SV Wien Rapid — Tradition seit 1899, getragen von einer der lautstärksten Fanszenen Europas.</p>
+    <div class="hero__actions" data-reveal="up">
+      <a href="tickets.html" class="btn btn--primary">Tickets kaufen</a>
+      <a href="mitgliedschaft.html" class="btn btn--ghost">Mitglied werden</a>
+    </div>
+  </div>
+
+  <div class="hero__scroll"><span>Scrollen</span><span class="line"></span></div>
+</section>
+
+<!-- ============================================ NEWS SLIDER ============================================ -->
+<section class="section" id="news">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Aktuelles</span>
+        <h2 data-reveal="up">Die neuesten News</h2>
+      </div>
+      <div class="slider-nav">
+        <button aria-label="Zurück" id="newsPrev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+        <button aria-label="Weiter" id="newsNext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+    </div>
+
+    <div class="slider" id="newsSlider" data-reveal-group>
+      <article class="card" style="width:340px" data-reveal="up">
+        <a href="news-detail.html">
+          <div class="card__media"><div class="skeleton"></div><img data-src="images/player-action.svg" alt="Matchwinner beim Heimspiel"></div>
+        </a>
+        <div class="card__body">
+          <span class="card__tag">Profis</span>
+          <h3 class="card__title"><a href="news-detail.html">Last-Minute-Tor sichert wichtigen Heimsieg</a></h3>
+          <p class="card__meta">26. Juni 2026 · 3 Min. Lesezeit</p>
+        </div>
+      </article>
+      <article class="card" style="width:340px" data-reveal="up">
+        <a href="news-detail.html">
+          <div class="card__media"><div class="skeleton"></div><img data-src="images/training.svg" alt="Trainingseinheit der Mannschaft"></div>
+        </a>
+        <div class="card__body">
+          <span class="card__tag">Verein</span>
+          <h3 class="card__title"><a href="news-detail.html">Neuer Trainingsplan vor entscheidender Saisonphase</a></h3>
+          <p class="card__meta">24. Juni 2026 · 2 Min. Lesezeit</p>
+        </div>
+      </article>
+      <article class="card" style="width:340px" data-reveal="up">
+        <a href="news-detail.html">
+          <div class="card__media"><div class="skeleton"></div><img data-src="images/stadium-exterior.svg" alt="Stadionansicht von außen"></div>
+        </a>
+        <div class="card__body">
+          <span class="card__tag">Frauen</span>
+          <h3 class="card__title"><a href="news-detail.html">Frauen-Team gewinnt Auswärtsspiel deutlich</a></h3>
+          <p class="card__meta">22. Juni 2026 · 4 Min. Lesezeit</p>
+        </div>
+      </article>
+      <article class="card" style="width:340px" data-reveal="up">
+        <a href="news-detail.html">
+          <div class="card__media"><div class="skeleton"></div><img data-src="images/jersey.svg" alt="Neues Heimtrikot"></div>
+        </a>
+        <div class="card__body">
+          <span class="card__tag">Fanshop</span>
+          <h3 class="card__title"><a href="news-detail.html">Neues Heimtrikot für die Saison 26/27 vorgestellt</a></h3>
+          <p class="card__meta">20. Juni 2026 · 2 Min. Lesezeit</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="diagonal-divider" aria-hidden="true"></div>
+
+<!-- ============================================ SPIELPLAN + TABELLE ============================================ -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="grid-2" style="align-items:start;gap:3rem">
+
+      <div>
+        <span class="eyebrow" style="color:var(--color-gold)">Spielplan</span>
+        <h2 data-reveal="up" style="margin-bottom:1.5rem">Nächste Spiele</h2>
+        <div style="display:flex;flex-direction:column;gap:1rem" data-reveal-group>
+          <div class="fixture-card" data-reveal="up">
+                  <a href="spiel-detail.html" class="match-row" data-reveal="up" data-cat="liga">
+            <div class="fixture-card__comp"><span>Bundesliga</span><span class="fixture-card__live"><span class="dot"></span> Sa, 18:30</span></div>
+            <div class="fixture-card__teams">
+              <div class="fixture-card__team"><img src="images/crest.svg" alt="Wien Rapid"><span>Wien Rapid</span></div>
+              <span class="fixture-card__score">–</span>
+              <div class="fixture-card__team"><img src="images/crest-opponent1.svg" alt="Austria Linz"><span>Austria Linz</span></div>
+            </div>
+            <div class="fixture-card__meta"><span>Weststadion</span><span>34. Runde</span></div>
+          </div>
+          <div class="fixture-card" data-reveal="up">
+                  <a href="spiel-detail.html" class="match-row" data-reveal="up" data-cat="liga">
+            <div class="fixture-card__comp"><span>ÖFB Cup</span><span>So, 15:00</span></div>
+            <div class="fixture-card__teams">
+              <div class="fixture-card__team"><img src="images/crest-opponent2.svg" alt="Gegner"><span>SK Sturm Graz</span></div>
+              <span class="fixture-card__score">–</span>
+              <div class="fixture-card__team"><img src="images/crest.svg" alt="Wien Rapid"><span>Wien Rapid</span></div>
+            </div>
+            <div class="fixture-card__meta"><span>Auswärts</span><span>Halbfinale</span></div>
+          </div>
+          <div class="fixture-card" data-reveal="up">
+            <div class="fixture-card__comp"><span>Bundesliga</span><span>20.7. · 18:00</span></div>
+                  <a href="spiel-detail.html" class="match-row" data-reveal="up" data-cat="liga">
+            <div class="fixture-card__teams">
+              <div class="fixture-card__team"><img src="images/crest-opponent3.svg" alt="Gegner"><span>LASK</span></div>
+              <span class="fixture-card__score">–</span>
+              <div class="fixture-card__team"><img src="images/crest.svg" alt="Wien Rapid"><span>Wien Rapid</span></div>
+            </div>
+            <div class="fixture-card__meta"><span>Auswärts</span><span>35. Runde</span></div>
+          </div>
+        </div>
+        <a href="spielplan.html" class="btn btn--ghost" style="margin-top:1.5rem">Gesamten Spielplan ansehen</a>
+      </div>
+
+      <div>
+        <span class="eyebrow" style="color:var(--color-gold)">Tabelle</span>
+        <h2 data-reveal="up" style="margin-bottom:1.5rem">Bundesliga-Stand</h2>
+        <div style="background:rgba(255,255,255,0.04);border-radius:var(--radius-md);padding:1.5rem" data-reveal="zoom">
+          <table class="table-widget" style="color:var(--color-white)">
+            <thead><tr><th class="pos">#</th><th>Verein</th><th class="num">Sp</th><th class="num">Tore</th><th class="num">Pkt</th></tr></thead>
+            <tbody>
+              <tr><td class="pos">1</td><td class="club"><img src="images/crest-opponent4.svg" class="crest-xs" alt="">Salzburg</td><td class="num">33</td><td class="num">71:22</td><td class="num">82</td></tr>
+              <tr class="is-highlighted"><td class="pos">2</td><td class="club"><img src="images/crest.svg" class="crest-xs" alt="">Wien Rapid</td><td class="num">33</td><td class="num">58:30</td><td class="num">68</td></tr>
+              <tr><td class="pos">3</td><td class="club"><img src="images/crest-opponent3.svg" class="crest-xs" alt="">LASK</td><td class="num">33</td><td class="num">52:34</td><td class="num">61</td></tr>
+              <tr><td class="pos">4</td><td class="club"><img src="images/crest-opponent2.svg" class="crest-xs" alt="">Sturm Graz</td><td class="num">33</td><td class="num">49:38</td><td class="num">57</td></tr>
+              <tr><td class="pos">5</td><td class="club"><img src="images/crest-opponent1.svg" class="crest-xs" alt="">Austria Linz</td><td class="num">33</td><td class="num">44:40</td><td class="num">52</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="spielplan.html" class="btn btn--ghost" style="margin-top:1.5rem">Vollständige Tabelle</a>
+      </div>
+
+    </div>
+
+    <div class="stats-strip" style="margin-top:4rem;border-top:1px solid rgba(255,255,255,.12);padding-top:2rem" data-reveal-group>
+      <div class="stats-strip__item" data-reveal="up"><div class="stats-strip__value"><span data-counter="68">0</span></div><div class="stats-strip__label">Punkte</div></div>
+      <div class="stats-strip__item" data-reveal="up"><div class="stats-strip__value"><span data-counter="58">0</span></div><div class="stats-strip__label">Tore geschossen</div></div>
+      <div class="stats-strip__item" data-reveal="up"><div class="stats-strip__value"><span data-counter="19">0</span></div><div class="stats-strip__label">Siege</div></div>
+      <div class="stats-strip__item" data-reveal="up"><div class="stats-strip__value"><span data-counter="42">0</span>K</div><div class="stats-strip__label">Mitglieder</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="diagonal-divider" aria-hidden="true"></div>
+
+<!-- ============================================ TEAM HIGHLIGHTS ============================================ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Unsere Stars</span>
+        <h2 data-reveal="up">Team-Highlights</h2>
+      </div>
+      <a href="teams.html" class="btn btn--dark">Alle Spieler</a>
+    </div>
+    <div class="grid-4" data-reveal-group>
+      <a href="spieler-detail.html" class="player-card" data-reveal="up">
+        <img src="images/player-action.svg" alt="Spielerporträt">
+        <span class="player-card__number">9</span>
+        <div class="player-card__info"><span class="player-card__pos">Stürmer</span><div class="player-card__name">M. Hofer</div></div>
+      </a>
+      <a href="spieler-detail.html" class="player-card" data-reveal="up">
+        <img src="images/player-action.svg" alt="Spielerporträt">
+        <span class="player-card__number">10</span>
+        <div class="player-card__info"><span class="player-card__pos">Mittelfeld</span><div class="player-card__name">L. Berger</div></div>
+      </a>
+      <a href="spieler-detail.html" class="player-card" data-reveal="up">
+        <img src="images/player-action.svg" alt="Spielerporträt">
+        <span class="player-card__number">4</span>
+        <div class="player-card__info"><span class="player-card__pos">Abwehr</span><div class="player-card__name">D. Novak</div></div>
+      </a>
+      <a href="spieler-detail.html" class="player-card" data-reveal="up">
+        <img src="images/player-action.svg" alt="Spielerporträt">
+        <span class="player-card__number">1</span>
+        <div class="player-card__info"><span class="player-card__pos">Tor</span><div class="player-card__name">P. Steiner</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ FANSHOP TEASER ============================================ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow">Fanshop</span>
+        <h2 data-reveal="up">Zeig deine Farben</h2>
+      </div>
+      <a href="fanshop.html" class="btn btn--primary">Zum Shop</a>
+    </div>
+    <div class="grid-4" data-reveal-group>
+      <article class="card product-card" data-reveal="up">
+        <div class="card__media"><div class="skeleton"></div><img data-src="images/jersey.svg" alt="Heimtrikot 26/27"></div>
+        <div class="card__body">
+          <h3 class="card__title">Heimtrikot 26/27</h3>
+          <div class="product-card__price">€ 89,90</div>
+        </div>
+      </article>
+      <article class="card product-card" data-reveal="up">
+        <div class="card__media"><div class="skeleton"></div><img data-src="images/jersey.svg" alt="Auswärtstrikot 26/27"></div>
+        <div class="card__body">
+          <h3 class="card__title">Auswärtstrikot 26/27</h3>
+          <div class="product-card__price">€ 89,90</div>
+        </div>
+      </article>
+      <article class="card product-card" data-reveal="up">
+        <div class="card__media"><div class="skeleton"></div><img data-src="images/jersey.svg" alt="Trainingsjacke"></div>
+        <div class="card__body">
+          <h3 class="card__title">Trainingsjacke Premium</h3>
+          <div class="product-card__price">€ 64,90 <del>€ 79,90</del></div>
+        </div>
+      </article>
+      <article class="card product-card" data-reveal="up">
+        <div class="card__media"><div class="skeleton"></div><img data-src="images/crest.svg" alt="Schal Wappen"></div>
+        <div class="card__body">
+          <h3 class="card__title">Fanschal Wappen</h3>
+          <div class="product-card__price">€ 19,90</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ VIDEOS ============================================ -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-head__text">
+        <span class="eyebrow" style="color:var(--color-gold)">Mediathek</span>
+        <h2 data-reveal="up">Videos & Highlights</h2>
+      </div>
+      <a href="videos.html" class="btn btn--ghost">Alle Videos</a>
+    </div>
+    <div class="grid-3" data-reveal-group>
+      <a href="videos.html" class="video-card" data-reveal="up">
+        <img src="images/player-action.svg" alt="Spielhighlights">
+        <div class="video-card__play"><span><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></span></div>
+        <span class="video-card__title">Highlights: Heimsieg gegen Linz</span>
+        <span class="video-card__duration">4:12</span>
+      </a>
+      <a href="videos.html" class="video-card" data-reveal="up">
+        <img src="images/training.svg" alt="Pressekonferenz">
+        <div class="video-card__play"><span><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></span></div>
+        <span class="video-card__title">Pressekonferenz vor dem Cup-Halbfinale</span>
+        <span class="video-card__duration">12:48</span>
+      </a>
+      <a href="videos.html" class="video-card" data-reveal="up">
+        <img src="images/stadium-exterior.svg" alt="Behind the Scenes">
+        <div class="video-card__play"><span><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg></span></div>
+        <span class="video-card__title">Behind the Scenes: Stadionumbau</span>
+        <span class="video-card__duration">6:30</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ MITGLIEDSCHAFT ============================================ -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;gap:3rem">
+      <div data-reveal="up">
+        <span class="eyebrow">Mitgliedschaft</span>
+        <h2>Werde Teil der Familie</h2>
+        <p style="margin:1rem 0 1.5rem;font-size:var(--fs-body-lg)">Als Mitglied stehst du deinem Verein noch näher – mit Vorteilen bei Tickets, Fanshop und exklusiven Einblicken hinter die Kulissen.</p>
+        <div style="display:flex;gap:1rem">
+          <a href="mitgliedschaft.html" class="btn btn--primary">Mitglied werden</a>
+          <a href="mitgliedschaft.html#vorteile" class="btn btn--dark">Vorteile ansehen</a>
+        </div>
+      </div>
+      <div class="card" style="aspect-ratio:4/3" data-reveal="zoom">
+        <div class="card__media" style="aspect-ratio:auto;height:100%"><img src="images/stadium-exterior.svg" alt="Fans im Stadion" style="height:100%"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ BUSINESS CLUB ============================================ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;gap:3rem">
+      <div class="card" style="aspect-ratio:4/3;order:1" data-reveal="zoom">
+        <div class="card__media" style="aspect-ratio:auto;height:100%"><img src="images/training.svg" alt="Business Club Hospitality" style="height:100%"></div>
+      </div>
+      <div data-reveal="up">
+        <span class="eyebrow">Business Club</span>
+        <h2>Netzwerken im VIP-Bereich</h2>
+        <p style="margin:1rem 0 1.5rem;font-size:var(--fs-body-lg)">Exklusive Hospitality-Pakete, Networking mit Entscheidungsträgern und unvergessliche Spieltage für Ihr Unternehmen.</p>
+        <a href="business.html" class="btn btn--primary">Business Club entdecken</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ PARTNER LOGOS ============================================ -->
+<section class="section section--tight">
+  <div class="container">
+    <p class="eyebrow text-center" style="display:block;text-align:center;margin-bottom:2rem">Unsere Partner</p>
+    <div class="partners-strip" data-reveal="fade">
+      <a href="#"><img src="images/crest-opponent1.svg" alt="Partner Logo"></a>
+      <a href="#"><img src="images/crest-opponent2.svg" alt="Partner Logo"></a>
+      <a href="#"><img src="images/crest-opponent3.svg" alt="Partner Logo"></a>
+      <a href="#"><img src="images/crest-opponent4.svg" alt="Partner Logo"></a>
+      <a href="#"><img src="images/crest.svg" alt="Partner Logo"></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ NEWSLETTER ============================================ -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="newsletter-block" data-reveal="zoom">
+      <div>
+        <h2>Verpasse keine News mehr</h2>
+        <p style="color:rgba(255,255,255,0.85)">Melde dich für unseren Newsletter an und erhalte alle Updates direkt in dein Postfach.</p>
+      </div>
+      <form class="newsletter-form" data-demo-form data-success-message="Danke für deine Anmeldung!">
+        <input type="email" placeholder="Deine E-Mail-Adresse" required aria-label="E-Mail-Adresse">
+        <button type="submit" class="btn btn--gold">Anmelden</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ FOOTER ============================================ -->
+<footer class="footer">
+  <div class="container footer__top">
+    <div>
+      <div class="footer__brand">
+        <img src="images/crest.svg" alt="SV Wien Rapid" style="width:44px">
+        <strong>SV Wien Rapid</strong>
+      </div>
+      <p>Weststadion · Keisslergasse 6, 1140 Wien<br>Gegründet 1899</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="3"/><polygon points="10 9 15 12 10 15 10 9" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+      </div>
+    </div>
+    <div class="footer__links">
+      <h4>Verein</h4>
+      <a href="news.html">News</a>
+      <a href="spielplan.html">Spielplan</a>
+      <a href="teams.html">Teams</a>
+      <a href="verein.html">Über uns</a>
+      <a href="verein.html#jobs">Jobs</a>
+    </div>
+    <div class="footer__links">
+      <h4>Service</h4>
+      <a href="tickets.html">Tickets</a>
+      <a href="fanshop.html">Fanshop</a>
+      <a href="mitgliedschaft.html">Mitgliedschaft</a>
+      <a href="business.html">Business</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+    <div class="footer__links">
+      <h4>Medien</h4>
+      <a href="videos.html">Videos</a>
+      <a href="news.html">Pressebereich</a>
+      <a href="stadion.html">Stadion</a>
+    </div>
+    <div>
+      <h4>Newsletter</h4>
+      <p>Bleib auf dem Laufenden mit unserem wöchentlichen Update.</p>
+      <form class="newsletter-inline" data-demo-form data-success-message="Danke für deine Anmeldung!">
+        <input type="email" placeholder="E-Mail-Adresse" required aria-label="E-Mail-Adresse">
+        <button type="submit" class="btn btn--primary btn--sm">OK</button>
+      </form>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span class="footer__copy">© 2026 SV Wien Rapid. Alle Rechte vorbehalten.</span>
+    <div class="footer__legal">
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">AGB</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky CTA -->
+<a href="tickets.html" class="sticky-cta btn btn--primary">🎟 Tickets kaufen</a>
+
+<!-- Back to top -->
+<button class="back-to-top" aria-label="Nach oben scrollen">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<!-- Cookie Banner -->
+<div class="cookie-banner">
+  <div class="cookie-banner__inner">
+    <p>Wir verwenden Cookies, um dir die bestmögliche Nutzererfahrung zu bieten. Mehr dazu in unserer Datenschutzerklärung.</p>
+    <div class="cookie-banner__actions">
+      <button class="btn btn--ghost btn--sm" data-consent="essential" style="color:var(--color-white)">Nur essenzielle</button>
+      <button class="btn btn--gold btn--sm" data-consent="all">Alle akzeptieren</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+  // Simple slider next/prev controls
+  const slider = document.getElementById('newsSlider');
+  document.getElementById('newsNext')?.addEventListener('click', () => slider.scrollBy({ left: 360, behavior: 'smooth' }));
+  document.getElementById('newsPrev')?.addEventListener('click', () => slider.scrollBy({ left: -360, behavior: 'smooth' }));
+</script>
+</body>
+</html>
